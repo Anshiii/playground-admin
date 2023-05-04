@@ -81,7 +81,7 @@ func ConfigPageBuilder(db *gorm.DB, prefix, style string, i18nB *i18n.Builder) *
 	imagePrefix := "/assets/images"
 	pb.Images(http.StripPrefix(path.Join(prefix, imagePrefix), http.FileServer(http.FS(fSys))), imagePrefix)
 	containers.RegisterHeader(pb)
-	containers.RegisterHeaderDemoContainer(pb, db)
+	containers.RegisterTextListContainer(pb, db)
 	containers.RegisterFooter(pb)
 	containers.RegisterVideoBannerContainer(pb)
 	containers.RegisterHeadingContainer(pb, db)
