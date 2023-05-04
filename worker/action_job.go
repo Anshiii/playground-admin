@@ -3,8 +3,8 @@ package worker
 import (
 	"fmt"
 
-	"github.com/qor5/admin/activity"
-	"github.com/qor5/admin/presets"
+	"github.com/anshiii/playground-admin/activity"
+	"github.com/anshiii/playground-admin/presets"
 	"github.com/qor5/ui/vuetify"
 	"github.com/qor5/web"
 	h "github.com/theplant/htmlgo"

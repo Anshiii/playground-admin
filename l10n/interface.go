@@ -4,7 +4,7 @@ import (
 	"context"
 	"reflect"
 
-	"github.com/qor5/admin/utils"
+	"github.com/anshiii/playground-admin/utils"
 )
 
 type L10nInterface interface {

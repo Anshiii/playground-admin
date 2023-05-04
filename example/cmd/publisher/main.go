@@ -6,11 +6,11 @@ import (
 	"os"
 	"time"
 
+	"github.com/anshiii/playground-admin/example/admin"
+	"github.com/anshiii/playground-admin/publish"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/s3control"
 	"github.com/qor/oss/s3"
-	"github.com/qor5/admin/example/admin"
-	"github.com/qor5/admin/publish"
 )
 
 func main() {

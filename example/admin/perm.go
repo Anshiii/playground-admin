@@ -3,10 +3,10 @@ package admin
 import (
 	"net/http"
 
+	"github.com/anshiii/playground-admin/activity"
+	"github.com/anshiii/playground-admin/example/models"
+	"github.com/anshiii/playground-admin/presets"
 	"github.com/ory/ladon"
-	"github.com/qor5/admin/activity"
-	"github.com/qor5/admin/example/models"
-	"github.com/qor5/admin/presets"
 	"github.com/qor5/x/perm"
 	"gorm.io/gorm"
 )

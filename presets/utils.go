@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/qor5/admin/presets/actions"
+	"github.com/anshiii/playground-admin/presets/actions"
 	. "github.com/qor5/ui/vuetify"
 	vx "github.com/qor5/ui/vuetifyx"
 	"github.com/qor5/web"

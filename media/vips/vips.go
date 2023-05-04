@@ -6,8 +6,8 @@ import (
 	"path"
 	"strings"
 
+	"github.com/anshiii/playground-admin/media"
 	"github.com/disintegration/imaging"
-	"github.com/qor5/admin/media"
 	"github.com/theplant/bimg"
 )
 

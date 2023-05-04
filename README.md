@@ -1,6 +1,6 @@
 # QOR5
 
-![Build status](https://github.com/qor5/admin/actions/workflows/go.yml/badge.svg) 
+![Build status](https://github.com/anshiii/playground-admin/actions/workflows/go.yml/badge.svg) 
 
 [Official Website](https://qor5.com)
 

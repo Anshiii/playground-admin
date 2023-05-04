@@ -3,7 +3,7 @@ package models
 import (
 	"time"
 
-	"github.com/qor5/admin/role"
+	"github.com/anshiii/playground-admin/role"
 	"github.com/qor5/x/login"
 	"gorm.io/gorm"
 )

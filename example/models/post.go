@@ -7,11 +7,11 @@ import (
 	"strings"
 	"time"
 
+	"github.com/anshiii/playground-admin/media/media_library"
+	"github.com/anshiii/playground-admin/publish"
+	"github.com/anshiii/playground-admin/seo"
+	"github.com/anshiii/playground-admin/slug"
 	"github.com/qor/oss"
-	"github.com/qor5/admin/media/media_library"
-	"github.com/qor5/admin/publish"
-	"github.com/qor5/admin/seo"
-	"github.com/qor5/admin/slug"
 	"gorm.io/gorm"
 )
 

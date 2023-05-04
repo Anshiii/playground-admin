@@ -6,9 +6,9 @@ import (
 	"io/ioutil"
 	"strings"
 
+	"github.com/anshiii/playground-admin/media"
 	"github.com/qor/oss"
 	"github.com/qor/oss/filesystem"
-	"github.com/qor5/admin/media"
 )
 
 var (

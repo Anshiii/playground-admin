@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/anshiii/playground-admin/publish"
 	"github.com/qor/oss"
-	"github.com/qor5/admin/publish"
 	"github.com/theplant/sliceutils"
 	"gorm.io/gorm"
 )

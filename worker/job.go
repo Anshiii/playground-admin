@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/qor5/admin/presets"
+	"github.com/anshiii/playground-admin/presets"
 	vx "github.com/qor5/ui/vuetifyx"
 	"github.com/qor5/web"
 	"github.com/qor5/x/i18n"

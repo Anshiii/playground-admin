@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/qor5/admin/example/admin"
+	"github.com/anshiii/playground-admin/example/admin"
 )
 
 func main() {

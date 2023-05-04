@@ -8,9 +8,9 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/anshiii/playground-admin/presets/actions"
 	"github.com/iancoleman/strcase"
 	"github.com/jinzhu/inflection"
-	"github.com/qor5/admin/presets/actions"
 	. "github.com/qor5/ui/vuetify"
 	"github.com/qor5/ui/vuetifyx"
 	"github.com/qor5/web"

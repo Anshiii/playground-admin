@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/qor5/admin/utils"
+	"github.com/anshiii/playground-admin/utils"
 	"gorm.io/gorm"
 )
 

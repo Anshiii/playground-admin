@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/qor5/admin/media/media_library"
+	"github.com/anshiii/playground-admin/media/media_library"
 )
 
 type (
@@ -352,7 +352,7 @@ func BenchmarkComplexDiff(b *testing.B) {
 
 // goos: darwin
 // goarch: amd64
-// pkg: github.com/qor5/admin/activity
+// pkg: github.com/anshiii/playground-admin/activity
 // cpu: Intel(R) Core(TM) i5-6267U CPU @ 2.90GHz
 // BenchmarkSimpleDiff-4    	  669444	      1869 ns/op
 // BenchmarkComplexDiff-4   	    1381	    729444 ns/op

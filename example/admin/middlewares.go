@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/qor5/admin/note"
-	"github.com/qor5/admin/role"
+	"github.com/anshiii/playground-admin/note"
+	"github.com/anshiii/playground-admin/role"
 	"github.com/qor5/x/login"
 	"gorm.io/gorm"
 )

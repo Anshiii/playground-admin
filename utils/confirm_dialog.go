@@ -1,7 +1,7 @@
 package utils
 
 import (
-	"github.com/qor5/admin/presets"
+	"github.com/anshiii/playground-admin/presets"
 	. "github.com/qor5/ui/vuetify"
 	"github.com/qor5/x/i18n"
 	h "github.com/theplant/htmlgo"

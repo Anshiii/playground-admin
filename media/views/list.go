@@ -1,8 +1,8 @@
 package views
 
 import (
-	"github.com/qor5/admin/media/media_library"
-	"github.com/qor5/admin/presets"
+	"github.com/anshiii/playground-admin/media/media_library"
+	"github.com/anshiii/playground-admin/presets"
 	"github.com/qor5/web"
 	h "github.com/theplant/htmlgo"
 	"gorm.io/gorm"

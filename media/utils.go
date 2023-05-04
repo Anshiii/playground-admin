@@ -6,8 +6,8 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/anshiii/playground-admin/utils"
 	"github.com/disintegration/imaging"
-	"github.com/qor5/admin/utils"
 )
 
 func GetImageFormat(url string) (*imaging.Format, error) {

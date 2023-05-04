@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/qor5/admin/presets/actions"
+	"github.com/anshiii/playground-admin/presets/actions"
 	. "github.com/qor5/ui/vuetify"
 	"github.com/qor5/web"
 	"github.com/sunfmin/reflectutils"

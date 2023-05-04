@@ -7,11 +7,11 @@ import (
 	"strings"
 	syncp "sync"
 
+	"github.com/anshiii/playground-admin/presets"
+	"github.com/gosimple/unidecode"
 	. "github.com/qor5/ui/vuetify"
 	"github.com/qor5/web"
 	"github.com/qor5/x/i18n"
-	"github.com/qor5/admin/presets"
-	"github.com/gosimple/unidecode"
 	"github.com/sunfmin/reflectutils"
 	h "github.com/theplant/htmlgo"
 	"golang.org/x/text/language"

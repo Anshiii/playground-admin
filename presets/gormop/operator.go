@@ -6,8 +6,8 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/anshiii/playground-admin/presets"
 	"github.com/jinzhu/gorm"
-	"github.com/qor5/admin/presets"
 	"github.com/qor5/web"
 )
 

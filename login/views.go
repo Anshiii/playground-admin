@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"net/url"
 
+	"github.com/anshiii/playground-admin/presets"
 	"github.com/pquerna/otp"
-	"github.com/qor5/admin/presets"
 	v "github.com/qor5/ui/vuetify"
 	"github.com/qor5/web"
 	"github.com/qor5/x/i18n"

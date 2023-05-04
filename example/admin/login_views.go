@@ -6,8 +6,8 @@ import (
 	"net/url"
 	"os"
 
-	plogin "github.com/qor5/admin/login"
-	"github.com/qor5/admin/presets"
+	plogin "github.com/anshiii/playground-admin/login"
+	"github.com/anshiii/playground-admin/presets"
 	v "github.com/qor5/ui/vuetify"
 	"github.com/qor5/web"
 	"github.com/qor5/x/i18n"

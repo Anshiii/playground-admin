@@ -7,9 +7,9 @@ import (
 	"reflect"
 	"strings"
 
+	"github.com/anshiii/playground-admin/presets/actions"
 	"github.com/iancoleman/strcase"
 	"github.com/jinzhu/inflection"
-	"github.com/qor5/admin/presets/actions"
 	"github.com/qor5/web"
 	"github.com/qor5/x/perm"
 )

@@ -4,9 +4,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/qor5/admin/pagebuilder/example"
-	"github.com/qor5/admin/presets"
-	"github.com/qor5/admin/presets/gorm2op"
+	"github.com/anshiii/playground-admin/pagebuilder/example"
+	"github.com/anshiii/playground-admin/presets"
+	"github.com/anshiii/playground-admin/presets/gorm2op"
 	"github.com/qor5/web"
 )
 

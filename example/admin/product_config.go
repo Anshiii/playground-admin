@@ -6,15 +6,15 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/qor5/admin/example/models"
-	"github.com/qor5/admin/media"
-	"github.com/qor5/admin/media/media_library"
-	media_view "github.com/qor5/admin/media/views"
-	"github.com/qor5/admin/presets"
+	"github.com/anshiii/playground-admin/example/models"
+	"github.com/anshiii/playground-admin/media"
+	"github.com/anshiii/playground-admin/media/media_library"
+	media_view "github.com/anshiii/playground-admin/media/views"
+	"github.com/anshiii/playground-admin/presets"
 	"github.com/qor5/ui/vuetify"
 	"github.com/qor5/web"
 
-	"github.com/qor5/admin/worker"
+	"github.com/anshiii/playground-admin/worker"
 	h "github.com/theplant/htmlgo"
 	"gorm.io/gorm"
 )

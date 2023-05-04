@@ -10,9 +10,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/qor5/admin/presets"
-	"github.com/qor5/admin/presets/actions"
-	examples2 "github.com/qor5/admin/presets/examples"
+	"github.com/anshiii/playground-admin/presets"
+	"github.com/anshiii/playground-admin/presets/actions"
+	examples2 "github.com/anshiii/playground-admin/presets/examples"
 	"github.com/qor5/web/multipartestutils"
 	"github.com/theplant/gofixtures"
 	"gorm.io/driver/sqlite"

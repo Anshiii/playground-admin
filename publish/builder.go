@@ -7,9 +7,9 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/anshiii/playground-admin/utils"
 	"github.com/iancoleman/strcase"
 	"github.com/qor/oss"
-	"github.com/qor5/admin/utils"
 	"gorm.io/gorm"
 	"gorm.io/gorm/schema"
 )

@@ -3,8 +3,8 @@ package admin
 import (
 	"os"
 
-	"github.com/qor5/admin/example/models"
-	"github.com/qor5/admin/role"
+	"github.com/anshiii/playground-admin/example/models"
+	"github.com/anshiii/playground-admin/role"
 	"github.com/qor5/x/perm"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"

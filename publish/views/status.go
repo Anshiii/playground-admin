@@ -5,9 +5,9 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/qor5/admin/presets"
-	"github.com/qor5/admin/publish"
-	"github.com/qor5/admin/utils"
+	"github.com/anshiii/playground-admin/presets"
+	"github.com/anshiii/playground-admin/publish"
+	"github.com/anshiii/playground-admin/utils"
 	. "github.com/qor5/ui/vuetify"
 	"github.com/qor5/web"
 	"github.com/qor5/x/i18n"

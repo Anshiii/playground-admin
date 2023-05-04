@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/qor5/admin/presets"
-	"github.com/qor5/admin/worker"
+	"github.com/anshiii/playground-admin/presets"
+	"github.com/anshiii/playground-admin/worker"
 	. "github.com/qor5/ui/vuetify"
 	"github.com/qor5/web"
 	h "github.com/theplant/htmlgo"

@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"os"
 
+	"github.com/anshiii/playground-admin/presets/examples"
 	"github.com/go-chi/chi/middleware"
-	"github.com/qor5/admin/presets/examples"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"

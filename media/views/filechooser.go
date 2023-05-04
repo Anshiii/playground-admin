@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/qor5/admin/media"
-	"github.com/qor5/admin/media/media_library"
+	"github.com/anshiii/playground-admin/media"
+	"github.com/anshiii/playground-admin/media/media_library"
 	. "github.com/qor5/ui/vuetify"
 	"github.com/qor5/web"
 	"github.com/qor5/x/i18n"

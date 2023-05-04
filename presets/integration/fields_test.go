@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/qor5/admin/presets"
+	. "github.com/anshiii/playground-admin/presets"
 	"github.com/qor5/web"
 	"github.com/qor5/web/multipartestutils"
 	"github.com/sunfmin/reflectutils"

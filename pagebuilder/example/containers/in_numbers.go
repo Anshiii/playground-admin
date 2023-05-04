@@ -9,10 +9,10 @@ import (
 	"github.com/iancoleman/strcase"
 	"github.com/jinzhu/inflection"
 
-	"github.com/qor5/admin/presets"
+	"github.com/anshiii/playground-admin/presets"
 	"github.com/qor5/web"
 
-	"github.com/qor5/admin/pagebuilder"
+	"github.com/anshiii/playground-admin/pagebuilder"
 	. "github.com/theplant/htmlgo"
 	"gorm.io/gorm"
 )

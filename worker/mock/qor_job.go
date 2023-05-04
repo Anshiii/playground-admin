@@ -4,7 +4,7 @@
 package mock
 
 import (
-	"github.com/qor5/admin/worker"
+	"github.com/anshiii/playground-admin/worker"
 	"sync"
 )
 

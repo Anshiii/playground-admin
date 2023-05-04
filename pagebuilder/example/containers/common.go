@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/qor5/admin/media/media_library"
+	"github.com/anshiii/playground-admin/media/media_library"
 
-	"github.com/qor5/admin/presets"
+	"github.com/anshiii/playground-admin/presets"
 	v "github.com/qor5/ui/vuetify"
 	"github.com/qor5/web"
 	. "github.com/theplant/htmlgo"

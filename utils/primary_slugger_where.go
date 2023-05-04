@@ -3,7 +3,7 @@ package utils
 import (
 	"fmt"
 
-	"github.com/qor5/admin/presets"
+	"github.com/anshiii/playground-admin/presets"
 	"gorm.io/gorm"
 )
 

@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/qor5/admin/media/media_library"
+	"github.com/anshiii/playground-admin/media/media_library"
 	h "github.com/theplant/htmlgo"
 )
 

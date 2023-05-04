@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/qor5/admin/presets"
+	"github.com/anshiii/playground-admin/presets"
 	vuetify "github.com/qor5/ui/vuetify"
 	"github.com/qor5/web"
 	"github.com/qor5/x/i18n"

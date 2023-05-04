@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/qor5/admin/presets"
-	"github.com/qor5/admin/presets/gorm2op"
+	"github.com/anshiii/playground-admin/presets"
+	"github.com/anshiii/playground-admin/presets/gorm2op"
 	"github.com/qor5/web"
 	"github.com/theplant/gofixtures"
 )

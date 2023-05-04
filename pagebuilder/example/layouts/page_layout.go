@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/anshiii/playground-admin/pagebuilder"
 	"github.com/qor5/web"
-	"github.com/qor5/admin/pagebuilder"
 	. "github.com/theplant/htmlgo"
 )
 

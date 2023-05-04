@@ -7,10 +7,10 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/anshiii/playground-admin/example/models"
+	plogin "github.com/anshiii/playground-admin/login"
+	"github.com/anshiii/playground-admin/presets"
 	"github.com/dustin/go-humanize"
-	"github.com/qor5/admin/example/models"
-	plogin "github.com/qor5/admin/login"
-	"github.com/qor5/admin/presets"
 	. "github.com/qor5/ui/vuetify"
 	vx "github.com/qor5/ui/vuetifyx"
 	"github.com/qor5/web"

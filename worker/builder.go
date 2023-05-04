@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/qor5/admin/activity"
-	"github.com/qor5/admin/presets"
+	"github.com/anshiii/playground-admin/activity"
+	"github.com/anshiii/playground-admin/presets"
 	. "github.com/qor5/ui/vuetify"
 	"github.com/qor5/ui/vuetifyx"
 	"github.com/qor5/web"

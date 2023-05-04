@@ -1,9 +1,9 @@
 package note
 
 import (
+	"github.com/anshiii/playground-admin/presets"
 	"github.com/qor5/web"
 	"github.com/qor5/x/i18n"
-	"github.com/qor5/admin/presets"
 	"gorm.io/gorm"
 )
 

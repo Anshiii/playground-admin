@@ -3,13 +3,13 @@ package pages
 import (
 	"log"
 
+	"github.com/anshiii/playground-admin/media"
+	"github.com/anshiii/playground-admin/media/media_library"
+	media_view "github.com/anshiii/playground-admin/media/views"
+	"github.com/anshiii/playground-admin/richeditor"
 	"github.com/qor5/ui/cropper"
 	. "github.com/qor5/ui/vuetify"
 	"github.com/qor5/web"
-	"github.com/qor5/admin/media"
-	"github.com/qor5/admin/media/media_library"
-	media_view "github.com/qor5/admin/media/views"
-	"github.com/qor5/admin/richeditor"
 	h "github.com/theplant/htmlgo"
 	"gorm.io/gorm"
 )

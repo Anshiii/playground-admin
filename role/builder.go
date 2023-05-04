@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/anshiii/playground-admin/presets"
+	"github.com/anshiii/playground-admin/presets/gorm2op"
 	"github.com/ory/ladon"
-	"github.com/qor5/admin/presets"
-	"github.com/qor5/admin/presets/gorm2op"
 	"github.com/qor5/ui/vuetify"
 	"github.com/qor5/web"
 	"github.com/qor5/x/perm"

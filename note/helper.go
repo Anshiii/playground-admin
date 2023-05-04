@@ -3,12 +3,12 @@ package note
 import (
 	"fmt"
 
+	"github.com/anshiii/playground-admin/presets"
+	"github.com/anshiii/playground-admin/presets/actions"
 	"github.com/qor5/ui/vuetify"
 	. "github.com/qor5/ui/vuetify"
 	"github.com/qor5/web"
 	"github.com/qor5/x/i18n"
-	"github.com/qor5/admin/presets"
-	"github.com/qor5/admin/presets/actions"
 	h "github.com/theplant/htmlgo"
 	"gorm.io/gorm"
 )

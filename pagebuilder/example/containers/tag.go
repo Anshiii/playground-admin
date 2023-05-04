@@ -1,8 +1,8 @@
 package containers
 
 import (
-	"github.com/qor5/admin/pagebuilder"
-	"github.com/qor5/admin/presets"
+	"github.com/anshiii/playground-admin/pagebuilder"
+	"github.com/anshiii/playground-admin/presets"
 	v "github.com/qor5/ui/vuetify"
 	"github.com/qor5/web"
 	. "github.com/theplant/htmlgo"

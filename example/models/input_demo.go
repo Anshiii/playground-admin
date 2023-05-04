@@ -3,8 +3,8 @@ package models
 import (
 	"time"
 
+	"github.com/anshiii/playground-admin/media/media_library"
 	"github.com/lib/pq"
-	"github.com/qor5/admin/media/media_library"
 )
 
 type InputDemo struct {

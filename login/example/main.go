@@ -6,10 +6,10 @@ import (
 	"net/http"
 	"os"
 
+	plogin "github.com/anshiii/playground-admin/login"
+	"github.com/anshiii/playground-admin/presets"
 	"github.com/markbates/goth/providers/github"
 	"github.com/markbates/goth/providers/google"
-	plogin "github.com/qor5/admin/login"
-	"github.com/qor5/admin/presets"
 	"github.com/qor5/web"
 	"github.com/qor5/x/login"
 	. "github.com/theplant/htmlgo"

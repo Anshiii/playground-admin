@@ -1,4 +1,4 @@
-module github.com/qor5/admin
+module github.com/anshiii/playground-admin
 
 go 1.19
 

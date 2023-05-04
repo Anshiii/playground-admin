@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/anshiii/playground-admin/example/models"
 	"github.com/go-chi/chi/v5"
-	"github.com/qor5/admin/example/models"
 	"github.com/qor5/web"
 	"github.com/qor5/x/sitemap"
 )

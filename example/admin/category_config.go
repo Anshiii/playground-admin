@@ -3,8 +3,8 @@ package admin
 import (
 	"strconv"
 
-	"github.com/qor5/admin/example/models"
-	"github.com/qor5/admin/presets"
+	"github.com/anshiii/playground-admin/example/models"
+	"github.com/anshiii/playground-admin/presets"
 	v "github.com/qor5/ui/vuetifyx"
 	"github.com/qor5/web"
 	h "github.com/theplant/htmlgo"
