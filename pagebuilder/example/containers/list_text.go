@@ -12,16 +12,19 @@ import (
 	"gorm.io/gorm"
 )
 
-type TextList struct {
-	ID       uint
-	anchorID string
-	title    string
-	items    []*TextListItem
-}
-
 type TextListItem struct {
 	text  string
 	title string
+}
+
+type TextListItems []*TextListItem
+type TextList struct {
+	id       uint
+	anchorID string
+	title    string
+
+	items TextListItems `sql:"type:text;"`
+	text  string
 }
 
 func (*TextList) TableName() string {
