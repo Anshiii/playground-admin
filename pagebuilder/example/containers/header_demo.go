@@ -7,6 +7,7 @@ import (
 	"github.com/anshiii/playground-admin/presets"
 	"github.com/iancoleman/strcase"
 	"github.com/jinzhu/inflection"
+	"github.com/qor5/ui/vuetify"
 	"github.com/qor5/web"
 	. "github.com/theplant/htmlgo"
 	"gorm.io/gorm"
@@ -19,14 +20,18 @@ type HeaderDemoContainer struct {
 }
 
 func RegisterHeaderDemoContainer(pageBuilder *pagebuilder.Builder, db *gorm.DB) {
-	vb := pageBuilder.RegisterContainer("Image").RenderFunc(func(obj interface{}, input *pagebuilder.RenderInput, ctx *web.EventContext) HTMLComponent {
-		v := obj.(*ImageContainer)
-		return ImageContainerBody(v, input)
-	})
-	mb := vb.Model(&ImageContainer{}).URIName(inflection.Plural(strcase.ToKebab("Image")))
-	eb := mb.Editing("Random", "Random", "AnchorID", "BackgroundColor", "TransitionBackgroundColor", "Image")
-	eb.Field("BackgroundColor").ComponentFunc(func(obj interface{}, field *presets.FieldContext, ctx *web.EventContext) HTMLComponent {
-		return Div(P().Content("hello demo?")).Class("header_demo_car")
+	container := pageBuilder.RegisterContainer("Demo-Container Name").
+		RenderFunc(func(obj interface{}, input *pagebuilder.RenderInput, ctx *web.EventContext) HTMLComponent {
+			headerDemoContainer := obj.(*HeaderDemoContainer)
+			return HeaderDemoContainerBody(headerDemoContainer, input)
+		})
+
+	container.Model(&HeaderDemoContainer{}).URIName(inflection.Plural(strcase.ToKebab("Demo-Container Name"))).Editing("title", "random").Field("random").ComponentFunc(func(obj interface{}, field *presets.FieldContext, ctx *web.EventContext) HTMLComponent {
+		return vuetify.VSelect().
+			Items([]bool{true, false}).
+			Value(field.Value(obj)).
+			Label(field.Label).
+			FieldName(field.FormKey)
 	})
 
 }
@@ -37,7 +42,7 @@ func HeaderDemoContainerBody(data *HeaderDemoContainer, input *pagebuilder.Rende
 		data.title, data.title, "",
 		"", data.random, data.random, input.IsEditor, "",
 		Div(
-			Div().Class("container-image-corner"),
+			Div().Content("hello world").Class("container-image-corner"),
 		).Class("container-wrapper"),
 	)
 	return body
