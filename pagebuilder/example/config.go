@@ -59,6 +59,7 @@ func ConfigPageBuilder(db *gorm.DB, prefix, style string, i18nB *i18n.Builder) *
 		&containers.PageTitle{},
 		&containers.ListContentLite{},
 		&containers.ListContentWithImage{},
+		&containers.TextList{},
 	)
 	if err != nil {
 		panic(err)
