@@ -24,6 +24,10 @@ type TextListItem struct {
 	title string
 }
 
+func (*TextList) TableName() string {
+	return "text_list_content"
+}
+
 func RegisterTextListContainer(pageBuilder *pagebuilder.Builder, db *gorm.DB) {
 	container := pageBuilder.RegisterContainer("TextList").
 		RenderFunc(func(obj interface{}, input *pagebuilder.RenderInput, ctx *web.EventContext) HTMLComponent {
