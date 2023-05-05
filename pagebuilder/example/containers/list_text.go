@@ -22,7 +22,7 @@ type TextListItem struct {
 
 type TextListItems []*TextListItem
 type TextList struct {
-	Id       uint
+	ID       uint
 	AnchorID string
 	Title    string
 
@@ -56,15 +56,15 @@ func RegisterTextListContainer(pageBuilder *pagebuilder.Builder, db *gorm.DB) {
 			return ListBody(props, input)
 		})
 	model := container.Model(&TextList{})
-	editable := model.Editing("anchorID", "title", "items")
+	editable := model.Editing("AnchorID", "Title", "Items")
 
-	itemField := pageBuilder.GetPresetsBuilder().NewFieldsBuilder(presets.WRITE).Model(&TextListItem{}).Only("text", "title")
+	itemField := pageBuilder.GetPresetsBuilder().NewFieldsBuilder(presets.WRITE).Model(&TextListItem{}).Only("Text", "Title")
 
-	editable.Field("items").Nested(itemField)
+	editable.Field("Items").Nested(itemField, &presets.DisplayFieldInSorter{Field: "Text"})
 }
 
 func ListBody(props *TextList, input *pagebuilder.RenderInput) HTMLComponent {
-	var body = ContainerWrapper(fmt.Sprintf(inflection.Plural(strcase.ToKebab("ListBody"))+"_%v", props.Id), props.AnchorID,
+	var body = ContainerWrapper(fmt.Sprintf(inflection.Plural(strcase.ToKebab("TextList"))+"_%v", props.ID), props.AnchorID,
 		"container-list_content container-lottie", "", "", "", "", true, true, true, "",
 		Ul(
 			ListItemBody(props.Items, input),
