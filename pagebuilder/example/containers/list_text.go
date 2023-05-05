@@ -46,7 +46,7 @@ func RegisterTextListContainer(pageBuilder *pagebuilder.Builder, db *gorm.DB) {
 }
 
 func ListBody(props *TextList, input *pagebuilder.RenderInput) HTMLComponent {
-	var body = ContainerWrapper(fmt.Sprintf(inflection.Plural(strcase.ToKebab("ListBody"))+"_%v", props.ID), props.anchorID,
+	var body = ContainerWrapper(fmt.Sprintf(inflection.Plural(strcase.ToKebab("ListBody"))+"_%v", props.id), props.anchorID,
 		"container-list_content container-lottie", "", "", "", "", true, true, true, "",
 		Ul(
 			ListItemBody(props.items, input),
