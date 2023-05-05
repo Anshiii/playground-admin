@@ -16,18 +16,18 @@ import (
 )
 
 type TextListItem struct {
-	text  string
-	title string
+	Text  string
+	Title string
 }
 
 type TextListItems []*TextListItem
 type TextList struct {
-	id       uint
-	anchorID string
-	title    string
+	Id       uint
+	AnchorID string
+	Title    string
 
-	items TextListItems `sql:"type:text;"`
-	text  string
+	Items TextListItems `sql:"type:text;"`
+	Text  string
 }
 
 func (*TextList) TableName() string {
@@ -42,6 +42,8 @@ func (this *TextListItems) Scan(value interface{}) error {
 	switch v := value.(type) {
 	case string:
 		return json.Unmarshal([]byte(v), this)
+	// case []byte:
+	// 	return json.Unmarshal(v, this)
 	default:
 		return errors.New("not supported")
 	}
@@ -62,10 +64,10 @@ func RegisterTextListContainer(pageBuilder *pagebuilder.Builder, db *gorm.DB) {
 }
 
 func ListBody(props *TextList, input *pagebuilder.RenderInput) HTMLComponent {
-	var body = ContainerWrapper(fmt.Sprintf(inflection.Plural(strcase.ToKebab("ListBody"))+"_%v", props.id), props.anchorID,
+	var body = ContainerWrapper(fmt.Sprintf(inflection.Plural(strcase.ToKebab("ListBody"))+"_%v", props.Id), props.AnchorID,
 		"container-list_content container-lottie", "", "", "", "", true, true, true, "",
 		Ul(
-			ListItemBody(props.items, input),
+			ListItemBody(props.Items, input),
 		))
 	return body
 }
@@ -74,8 +76,8 @@ func ListItemBody(items []*TextListItem, input *pagebuilder.RenderInput) HTMLCom
 	var itemsWrap *HTMLTagBuilder = Li().Class("container-list_content-grid")
 	for _, item := range items {
 		var itemEle HTMLComponent = Div(
-			Div().Content(item.title),
-			Div().Content(item.text),
+			Div().Content(item.Title),
+			Div().Content(item.Text),
 		)
 		itemsWrap.AppendChildren(itemEle)
 	}
