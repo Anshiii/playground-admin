@@ -67,17 +67,17 @@ func ListBody(props *TextList, input *pagebuilder.RenderInput) HTMLComponent {
 	var body = ContainerWrapper(fmt.Sprintf(inflection.Plural(strcase.ToKebab("TextList"))+"_%v", props.ID), props.AnchorID,
 		"container-list_content container-lottie", "", "", "", "", true, true, true, "",
 		Ul(
-			ListItemBody(props.Items, input),
+			ListItemBody(props.Items),
 		))
 	return body
 }
 
-func ListItemBody(items []*TextListItem, input *pagebuilder.RenderInput) HTMLComponent {
+func ListItemBody(items []*TextListItem) HTMLComponent {
 	var itemsWrap *HTMLTagBuilder = Li().Class("container-list_content-grid")
 	for _, item := range items {
 		var itemEle HTMLComponent = Div(
-			P().Content(item.Title),
-			Span(item.Text),
+			P().Value(item.Title).Class("text-list-item-title"),
+			Span(item.Text).Class("text-list-item-text"),
 		)
 		itemsWrap.AppendChildren(itemEle)
 	}

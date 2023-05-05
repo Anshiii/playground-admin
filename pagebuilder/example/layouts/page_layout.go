@@ -32,6 +32,7 @@ func DefaultPageLayoutFunc(body HTMLComponent, input *pagebuilder.PageLayoutInpu
 
 	js := "https://the-plant.com/assets/app/container.4f902c4.js"
 	css := "https://the-plant.com/assets/app/container.4f902c4.css"
+	cssOwn := "http://localhost:9000/admin/page_builder/assets/own.css"
 	domain := "https://example.qor5.theplant-dev.com"
 
 	return Components(
@@ -49,6 +50,7 @@ func DefaultPageLayoutFunc(body HTMLComponent, input *pagebuilder.PageLayoutInpu
 				Meta().Name("viewport").Content("width=device-width, initial-scale=1"),
 
 				Link("").Rel("stylesheet").Type("text/css").Href(css),
+				Link("").Rel("stylesheet").Type("text/css").Href(cssOwn),
 				If(len(input.EditorCss) > 0, input.EditorCss...),
 				freeStyleCss,
 				//RawHTML(dataLayer),
