@@ -42,8 +42,8 @@ func (this *TextListItems) Scan(value interface{}) error {
 	switch v := value.(type) {
 	case string:
 		return json.Unmarshal([]byte(v), this)
-	// case []byte:
-	// 	return json.Unmarshal(v, this)
+	case []byte:
+		return json.Unmarshal(v, this)
 	default:
 		return errors.New("not supported")
 	}
@@ -76,8 +76,8 @@ func ListItemBody(items []*TextListItem, input *pagebuilder.RenderInput) HTMLCom
 	var itemsWrap *HTMLTagBuilder = Li().Class("container-list_content-grid")
 	for _, item := range items {
 		var itemEle HTMLComponent = Div(
-			Div().Content(item.Title),
-			Div().Content(item.Text),
+			P().Content(item.Title),
+			Span(item.Text),
 		)
 		itemsWrap.AppendChildren(itemEle)
 	}
