@@ -1,6 +1,9 @@
 package containers
 
 import (
+	"database/sql/driver"
+	"encoding/json"
+	"errors"
 	"fmt"
 
 	"github.com/anshiii/playground-admin/pagebuilder"
@@ -29,6 +32,19 @@ type TextList struct {
 
 func (*TextList) TableName() string {
 	return "text_list_content"
+}
+
+func (this TextListItems) Value() (driver.Value, error) {
+	return json.Marshal(this)
+}
+
+func (this *TextListItems) Scan(value interface{}) error {
+	switch v := value.(type) {
+	case string:
+		return json.Unmarshal([]byte(v), this)
+	default:
+		return errors.New("not supported")
+	}
 }
 
 func RegisterTextListContainer(pageBuilder *pagebuilder.Builder, db *gorm.DB) {
